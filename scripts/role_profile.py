@@ -31,7 +31,7 @@ GRADE_BASE = {
     "Lead": r"\blead\b|team ?lead|\bлид\b|principal|ведущий|ведущего",
     "Senior": r"\bsenior\b|\bsr\.?\b|сеньор\w*|синьор\w*|старший|старшего",
     "Middle": r"\bmiddle\b|\bmid\b|мидл\w*|миддл\w*",
-    "Junior": r"\bjunior\b|\bjun\b|\bintern\b|джуниор\w*|джун\w*|стаж[её]р\w*|стажировк\w*",
+    "Junior": r"\bjunior\b|\bjun\b|\bintern\b|\binternship\b|джуниор\w*|джун\w*|стаж[её]р\w*|стажировк\w*|начинающ\w*|без опыта|нет опыта|опыт не требуется|опыта не требуется|готов\w* обуч\w*|обучение с нуля"
 }
 
 
@@ -73,7 +73,7 @@ def load(name: str | None = None) -> Profile:
         name = os.environ.get("TG_DIGEST_PROFILE")
     if name is None:
         config = yaml.safe_load(CONFIG_PATH.read_text(encoding="utf-8")) or {}
-        name = config.get("profile") or "product"
+        name = config.get("profile") or "backend"
     path = PROFILES_DIR / f"{name}.yml"
     if not path.exists():
         available = sorted(p.stem for p in PROFILES_DIR.glob("*.yml"))

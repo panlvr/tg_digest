@@ -1,6 +1,6 @@
 # Which role the digest is for: profiles/<name>.yml holds the role's regexes
 # and the page title. Ships with `product` and `frontend`.
-profile: product
+profile: backend
 
 tg_folder_name: vacancy
 

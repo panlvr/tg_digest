@@ -1,0 +1,184 @@
+# Frontend developer jobs. The second profile, tuned on a folder of frontend
+# channels for a shorter time than `product`; expect to adjust it to your
+# channels. See profiles/product.yml for what each key does.
+
+site:
+  title: backend jobs
+  tagline: from Telegram
+
+roles:
+  patterns:
+    # Backend / development
+    - '\bbackend\b'
+    - '\bback[- ]?end\b'
+    - '\bbackend developer\b'
+    - '\bbackend engineer\b'
+    - '\bразработчик\w*'
+    - '\bпрограммист\w*'
+    - '\bsoftware engineer\b'
+    - '\bsoftware developer\b'
+
+    # Data / analytics
+    - '\bdata analyst\b'
+    - '\bdata analytics\b'
+    - '\bаналитик\w* данных\b'
+    - '\bпродуктов\w* аналитик\w*'
+    - '\bproduct analyst\b'
+    - '\bproduct analytics\b'
+    - '\bbi analyst\b'
+    - '\bbi аналитик\w*'
+
+    # QA / testing
+    - '\bqa\b'
+    - '\bqa engineer\b'
+    - '\bquality assurance\b'
+    - '\bтестировщик\w*'
+    - '\bинженер\w* по тестированию'
+    - '\bавтотестировщик\w*'
+    - '\btest automation\b'
+    - '\bautomation tester\b'
+
+    # Business / system / technical analysis
+    - '\bbusiness analyst\b'
+    - '\bбизнес[- ]?аналитик\w*'
+    - '\bsystem analyst\b'
+    - '\bсистемн\w* аналитик\w*'
+    - '\btechnical analyst\b'
+    - '\bтехническ\w* аналитик\w*'
+    - '\bbusiness systems analyst\b'
+    - '\bBSA\b'
+
+  loose:
+    - '\banalyst\b'
+    - '\bаналитик\w*'
+    - '\banalytics\b'
+    - '\bаналитика\w*'
+    - '\bdeveloper\b'
+    - '\bengineer\b'
+    - '\bразработка\w*'
+    - '\bпрограммирование\w*'
+    - '\btesting\b'
+    - '\bтестирован\w*'
+    - '\bautomation\b'
+
+  hint:
+    - 'backend|back[- ]?end|data analyst|аналитик|qa|тестировщик|тестирован|developer|разработчик|программист|business analyst|бизнес[- ]?аналитик|system analyst|системн\w* аналитик|technical analyst|BI|product analyst'
+
+  exclude:
+    # Frontend
+    - 'frontend|front[- ]?end|фронтенд\w*|front end'
+
+    # Mobile
+    - 'ios developer|android developer|mobile developer|мобильн\w* разработчик'
+
+    # Languages / ecosystems you don't want
+    - 'php developer|php разработчик'
+    - 'c# developer|c# разработчик|\.net developer|dotnet developer'
+    - 'c\+\+ developer|c\+\+ разработчик'
+
+    # Management / senior roles
+    - 'product manager|продакт менеджер|продакт\w*'
+    - 'project manager|проджект менеджер|руководитель проекта'
+    - 'unity|unity developer|unity разработчик'
+    - 'content manager|content creator|контент\w* менеджер|контент\w*'
+    - 'smm|smm manager|social media|социальн\w* сет\w*'
+    - '\bpersonal assistant\b'
+    - '\bличн\w* ассистент\w*'
+    - '\bdesigner\b'
+    - '\bдизайнер\w*'
+    - '\bsmm\b'
+    - '\bsmm manager\b'
+    - '\bseo\b'
+    - '\bseo manager\b'
+  
+tags:
+
+  - key: python
+
+    label: Python
+
+    pattern: 'python|питон'
+
+  - key: go
+
+    label: Go
+
+    pattern: '\bgo\b|golang'
+
+  - key: java
+
+    label: Java
+
+    pattern: '\bjava\b'
+
+  - key: kotlin
+
+    label: Kotlin
+
+    pattern: 'kotlin'
+
+  - key: rust
+
+    label: Rust
+
+    pattern: '\brust\b'
+
+  - key: ruby
+
+    label: Ruby
+
+    pattern: '\bruby\b|ruby on rails|\brails\b'
+
+  - key: scala
+
+    label: Scala
+
+    pattern: '\bscala\b'
+
+  - key: sql
+
+    label: SQL
+
+    pattern: '\bsql\b|postgresql|mysql|clickhouse|greenplum|oracle'
+
+  - key: c
+
+    label: C
+
+    pattern: '\bc\b|C language|язык C'
+
+  - key: automation
+
+    label: Automation
+
+    pattern: 'automation|автоматизац\w*|автотест\w*|selenium|playwright|pytest'
+
+  - key: bi
+
+    label: BI
+
+    pattern: 'power bi|powerbi|tableau|metabase|qlik|superset'
+
+  - key: backend
+
+    label: Backend
+
+    pattern: 'backend|back[- ]?end|бэкенд|бэкэнд'
+
+  - key: api
+
+    label: API
+
+    pattern: '\bapi\b|rest|grpc|swagger|openapi'
+
+  - key: data
+
+    label: Data
+
+    pattern: 'data analyst|data analytics|аналитик данных|data science|данн\w*'
+
+  - key: product
+
+    label: Product Analytics
+
+    pattern: 'product analytics|product analyst|продуктов\w* аналитик\w*|retention|воронк\w*|когорт\w*'
