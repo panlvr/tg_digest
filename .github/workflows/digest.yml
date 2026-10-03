@@ -4,7 +4,7 @@ on:
   schedule:
     # 06:23 MSK. GitHub starts scheduled runs late, by 4-5 hours lately at the
     # top of the hour, so this aims early and off the hour to land in the morning.
-    - cron: "23 3 * * *"
+    - cron: "27 3 * * *"
   workflow_dispatch:
 
 permissions:
